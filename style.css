@@ -1,0 +1,18 @@
+/* Style for the table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;  /* Add border to the table itself */
+}
+
+/* Add border to table, rows, and cells */
+.styled-table th, .styled-table td {
+    border: 1px solid black; /* Adjust color and thickness as needed */
+    padding: 8px; /* Add spacing inside cells */
+    text-align: left; /* Align text */
+}
+
+/* Optional: Style the header */
+.styled-table thead {
+    background-color: #f2f2f2; /* Light gray header */
+}
