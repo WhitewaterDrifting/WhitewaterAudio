@@ -1,23 +1,41 @@
 body {
-    background-color: #27241e; /* Deep Forest Green */
+    background-color: #171715; /* Deep Forest Green */
     color: #F5F5DC; /* Warm Beige for text */
     font-family: 'Courier New', Courier, monospace; /* Vintage typewriter font */
     margin: 0;
     padding: 20px;
 }
 
-img {
-    display: block;
-    margin: 0 auto; /* Centres the image horizontally */
-    max-width: 100%; /* Ensures responsiveness */
+.main-image {
+    display: block; 
+    margin: 50px auto; /* Moves image down and centres it */
+    width: 100%;  /* Makes the image responsive to its container */
+    max-width: 800px;  /* Ensures the image doesn't become too large */
+    height: auto; /* Keeps the aspect ratio intact */
+    object-fit: cover;
+}
+
+body {
+    background-image: url('images/7B424E02-BAB2-4E0C-AFFA-F5807B7AB715-3 2.jpg'); 
+    background-size: cover; /* Ensures it covers the whole screen */
+    background-position: center; /* Centres the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps it static while scrolling */
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+
+
+h1, h2, h3, h5, h6 {
     color: #D4AF37; /* Muted Gold */
     text-transform: uppercase;
-    text-align: center;
 }
+h4 {
+    color: #D4AF37; /* Muted Gold */
+    text-transform: uppercase;
+    text-align:center
+}
+
 
 a {
     color: #e35218;
@@ -28,12 +46,123 @@ a:hover {
     color: #F5F5DC;
 }
 
-
-/* Style for the table */
-.styled-table {
+/* Header styling */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps contact banner on the right */
+    padding: 1px 20px;
+    background-color: #171715;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrap logo and title together */
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 1px; /* Adjust spacing between logo and title */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+
+/* Ensure body content does not get hidden behind the fixed header */
+body {
+    padding-top: 80px; /* Adjust this based on the height of your header */
+}
+
+
+
+/* Logo styling */
+.logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Same as width for a perfect circle */
+    border-radius: 30%; /* Makes the image a circle */
+    object-fit: cover; /* Ensures the image fills the circular shape */
+    border: 2px solid #D4AF37; /* Optional: Adds a vintage-style gold border */
+    margin-right: 20px;
+}
+
+
+/* Site name styling */
+.site-title {
+    font-size: 24px;
+    color: #D4AF37; /* Gold for vintage vibe */
+    font-family: "Arial", sans-serif; /* Choose a font that matches your style */
+    white-space: nowrap; /* Prevents title from breaking into two lines */
+}
+
+.subheader {
+    position: fixed;
+    top: 60px; /* Right below the main header */
+    left: 0;
+    width: 100%;
+    background-color: #171715; /* Same as header */
+    color: #D4AF37; /* Gold text */
+    height: 30px; /* Adjust height */
+    display: flex;
+    justify-content: center; /* Centers links horizontally */
+    align-items: center; /* Centers text vertically */
+    gap: 20px; /* Space between links */
+    font-size: 14px;
+    font-weight: bold;
+    transition: top 0.3s ease-in-out; /* Smooth hiding effect */
+    z-index: 999;
+}
+
+.subheader-link {
+    color: #D4AF37; /* Gold text */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.subheader-link:hover {
+    color: #F5F5DC; /* Light beige hover effect */
+}
+
+
+
+.contact-banner {
+    top: 10px;
+    right: 10px;
+    background-color: #D4AF37;
+    color: #2C3E50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  /* Ensures it stays on top of other elements */
+}
+
+
+.contact-banner:hover {
+    background-color: #F5F5DC; /* Light beige hover effect */
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centres horizontally */
+    align-items: center; /* Centres vertically (if needed) */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Adds space above */
+    margin-bottom: 20px;
+}
+
+
+.styled-table {
+    width: 90%; /* Keeps it from stretching full width */
+    max-width: 900px; /* Optional: Limits the max width */
+    margin: 0 auto; /* Centres the table horizontally */
     border-collapse: collapse;
-    border: 1px solid black;  /* Add border to the table itself */
+    border: 1px solid black;
 }
 
 /* Add border to table, rows, and cells */
@@ -51,13 +180,11 @@ a:hover {
     padding: 10px;
 }
 
-
-.styled-table thead {
-    background-color: #8B4513; /* Rich Brown */
-    color: #000000; /* Warm Beige */
-    font-weight: bold;
-    text-transform: uppercase;
+table.styled-table thead th {
+    background-color: #D4AF37;
+    color: black !important; /* Adjust text colour if needed */
 }
+
 
 .styled-table th, .styled-table td {
     padding: 12px;
@@ -78,3 +205,39 @@ a:hover {
     transition: 0.3s ease-in-out;
 }
 
+.email-button {
+    display: inline-block;
+    background-color: #D4AF37; /* Gold */
+    color: #2C3E50; /* Dark text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.email-button:hover {
+    background-color: #F5F5DC; /* Light beige hover effect */
+}
+
+/* Bottom Section Styling */
+.bottom-section {
+    text-align: center; /* Centres the content */
+    padding: 40px; /* Adds space around the section */
+}
+
+/* Instagram logo styling */
+.instagram-icon {
+    width: 40px; /* Set the size of the icon */
+    height: 40px; /* Maintain a square shape */
+    object-fit: cover; /* Ensure the image is nicely cropped */
+}
+
+/* Instagram link styling */
+.instagram-link {
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+.instagram-link:hover .instagram-icon {
+    opacity: 0.7; /* Adds a hover effect */
+}
