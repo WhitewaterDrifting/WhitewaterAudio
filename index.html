@@ -5,13 +5,47 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Whitewater Audio</h1>
-    <img src="images/IMG_3032.JPG" style="width: 300px; height: 200px;">
+    <header class="site-header">
+        <div class="logo-title-container">
+            <a href="index.html">
+                <img src="images/CNV00031.jpg" alt="Whitewater Audio Logo" class="logo">
+            </a>
+            <h1 class="site-title">Whitewater Audio</h1>
+        </div>
+        <a href="contact.html" class="contact-banner">Contact Me</a>
+    </header>
+    
+    <div class="subheader">
+        <a href="#portfolio" class="subheader-link">Portfolio</a>
+        <a href="#services" class="subheader-link">Services</a>
+        <a href="#credits" class="subheader-link">Credits</a>
+    </div>
+    
+    </header>
+    
+    
+    <img src="images/IMG_3032.JPG" class="main-image" style="width: 500px; height: 350px;">
     <h4>Hi, my name is Adam. I'm an Audio Engineer from South Wales.</h4>
     <h6>This website is currently under construction as I continue learning to code. However, I am still available for work. For any inquiries, please feel free to reach out via email - adamedmunds2@gmail.com</h6>
     <h6>In the meantime, feel free to checkout two examples from projects I've recently worked on.</h6>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0uKBvjbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <h2 id="portfolio">Portfolio</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/ph-0uKBvjbo?si=IbTzf84YsEB0B1iI" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+<h2 id="services">Services</h2>
+    <h4>Audio Mixing &#9679; Dialogue Editing &#9679; Sound Design &#9679; Final Master </h4>
+
+
+<h2 id="credits">Credits</h2>
     <table class="styled-table">
         <thead>
             <tr>
@@ -35,7 +69,7 @@
             <td scope="row">Ross Pierson</td>
             <td scope="row">In Post</td>
             <td scope="row">Documentary</td>
-        </tr>
+        </tr> 
         <tr>
             <td scope="row">Audio Engineer-VR Mix</td>
             <td scope="row">Ser Y Cleddau</td>
@@ -108,5 +142,28 @@
         </tr>
         </tbody>
     </table>
+
+    <!-- Bottom Section -->
+<section class="bottom-section">
+    <a href="https://www.instagram.com/noiz_adamed" target="_blank" class="instagram-link">
+        <img src="images/instagram-white-icon.webp" alt="Instagram Logo" class="instagram-icon">
+    </a>
+</section>
+<script>
+    let lastScrollTop = 0;
+    const subheader = document.querySelector(".subheader");
+
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            subheader.style.top = "-50px"; // Hides it when scrolling down
+        } else {
+            subheader.style.top = "60px"; // Shows it when scrolling up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
 </body>
 </html>
