@@ -1,0 +1,254 @@
+body {
+    background-color: #171715; /* Deep Forest Green */
+    color: #F5F5DC; /* Warm Beige for text */
+    font-family: 'Courier New', Courier, monospace; /* Vintage typewriter font */
+    margin: 0;
+    padding: 20px;
+}
+
+.main-image {
+    display: block; 
+    margin: 50px auto; /* Moves image down and centres it */
+    width: 100%;  /* Makes the image responsive to its container */
+    max-width: 800px;  /* Ensures the image doesn't become too large */
+    height: auto; /* Keeps the aspect ratio intact */
+    object-fit: cover;
+}
+
+body {
+    background-image: url('images/7B424E02-BAB2-4E0C-AFFA-F5807B7AB715-3 2.jpg'); 
+    background-size: cover; /* Ensures it covers the whole screen */
+    background-position: center; /* Centres the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps it static while scrolling */
+    padding-top: 80; /* Adjust based on your header's height */
+}
+
+
+
+
+h1, h2, h3, h5 {
+    color: #D4AF37; /* Muted Gold */
+    text-transform: uppercase;
+}
+h4,h6 {
+    color: #D4AF37; /* Muted Gold */
+    text-transform: uppercase;
+    text-align:center
+}
+
+
+a {
+    color: #e35218;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #F5F5DC;
+}
+
+/* Header styling */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps contact banner on the right */
+    padding: 1px 20px;
+    background-color: #171715;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrap logo and title together */
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 1px; /* Adjust spacing between logo and title */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+
+/* Ensure body content does not get hidden behind the fixed header */
+body {
+    padding-top: 80px; /* Adjust this based on the height of your header */
+}
+
+
+
+/* Logo styling */
+.logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Same as width for a perfect circle */
+    border-radius: 30%; /* Makes the image a circle */
+    object-fit: cover; /* Ensures the image fills the circular shape */
+    border: 2px solid #D4AF37; /* Optional: Adds a vintage-style gold border */
+    margin-right: 20px;
+}
+
+
+/* Site name styling */
+.site-title {
+    font-size: 24px;
+    color: #D4AF37; /* Gold for vintage vibe */
+    font-family: "Arial", sans-serif; /* Choose a font that matches your style */
+    white-space: nowrap; /* Prevents title from breaking into two lines */
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.site-header {
+    margin-bottom: 0; /* Remove any unwanted gap */
+    padding-bottom: 0;
+}
+
+.subheader {
+    position: absolute;
+    top: 0;
+    margin-top: 60px; /* Ensure it's below the header */
+    padding: 5px 0;
+    background-color: #171715;
+    z-index: 999; /* Make sure it's above body content */  
+    transition: top 0.2s ease-in-out;
+    width: 100%; 
+}
+
+
+.subheader-link {
+    color: #D4AF37; /* Gold text */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.subheader-link:hover {
+    color: #F5F5DC; /* Light beige hover effect */
+}
+
+
+
+.contact-banner {
+    top: 10px;
+    right: 10px;
+    background-color: #D4AF37;
+    color: #2C3E50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  /* Ensures it stays on top of other elements */
+}
+
+
+.contact-banner:hover {
+    background-color: #F5F5DC; /* Light beige hover effect */
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centres horizontally */
+    align-items: center; /* Centres vertically (if needed) */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Adds space above */
+    margin-bottom: 20px;
+}
+
+
+.styled-table {
+    width: 90%; /* Keeps it from stretching full width */
+    max-width: 900px; /* Optional: Limits the max width */
+    margin: 0 auto; /* Centres the table horizontally */
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+/* Add border to table, rows, and cells */
+.styled-table th, .styled-table td {
+    border: 1px solid black; /* Adjust color and thickness as needed */
+    padding: 8px; /* Add spacing inside cells */
+    text-align: left; /* Align text */
+}
+
+.styled-table {
+    background-color: #FAF9F6; /* Off-White for better contrast */
+    color: #2C3E50; /* Deep Forest Green text */
+    border-radius: 8px; /* Slight rounding for a softer look */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
+    padding: 10px;
+}
+
+table.styled-table thead th {
+    background-color: #D4AF37;
+    color: black !important; /* Adjust text colour if needed */
+}
+
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    border: 1px solid #2C3E50; /* Deep Forest Green */
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #F5F5DC; /* Warm Beige */
+}
+
+.styled-table tr:nth-child(odd) {
+    background-color: #FAF9F6; /* Off-White */
+}
+
+.styled-table tr:hover {
+    background-color: #D4AF37; /* Muted Gold */
+    color: #2C3E50; /* Deep Forest Green */
+    transition: 0.3s ease-in-out;
+}
+
+.email-button {
+    display: inline-block;
+    background-color: #D4AF37; /* Gold */
+    color: #2C3E50; /* Dark text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.email-button:hover {
+    background-color: #F5F5DC; /* Light beige hover effect */
+}
+
+/* Bottom Section Styling */
+.bottom-section {
+    text-align: center; /* Centers the content */
+    padding: 40px; /* Adds space around the section */
+}
+
+/* General styling for all social media icons */
+.social-icon {
+    max-width: 80px; /* Set the size of all icons */
+    height: 40px; /* Maintain a square shape */
+    object-fit: cover; /* Ensure the image is nicely cropped */
+    margin: 0 10px; /* Adds spacing between icons */
+}
+
+/* Removes underline from all social media links */
+.social-link {
+    text-decoration: none;
+}
+
+/* Hover effect applied correctly to all icons */
+.social-link:hover .social-icon {
+    opacity: 0.7;
+}
+ 
+
