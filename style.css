@@ -21,16 +21,17 @@ body {
     background-position: center; /* Centres the image */
     background-repeat: no-repeat; /* Prevents tiling */
     background-attachment: fixed; /* Keeps it static while scrolling */
+    padding-top: 80; /* Adjust based on your header's height */
 }
 
 
 
 
-h1, h2, h3, h5, h6 {
+h1, h2, h3, h5 {
     color: #D4AF37; /* Muted Gold */
     text-transform: uppercase;
 }
-h4 {
+h4,h6 {
     color: #D4AF37; /* Muted Gold */
     text-transform: uppercase;
     text-align:center
@@ -96,23 +97,29 @@ body {
     white-space: nowrap; /* Prevents title from breaking into two lines */
 }
 
-.subheader {
+.header-wrapper {
     position: fixed;
-    top: 60px; /* Right below the main header */
-    left: 0;
+    top: 0;
     width: 100%;
-    background-color: #171715; /* Same as header */
-    color: #D4AF37; /* Gold text */
-    height: 30px; /* Adjust height */
-    display: flex;
-    justify-content: center; /* Centers links horizontally */
-    align-items: center; /* Centers text vertically */
-    gap: 20px; /* Space between links */
-    font-size: 14px;
-    font-weight: bold;
-    transition: top 0.3s ease-in-out; /* Smooth hiding effect */
-    z-index: 999;
+    z-index: 1000;
 }
+
+.site-header {
+    margin-bottom: 0; /* Remove any unwanted gap */
+    padding-bottom: 0;
+}
+
+.subheader {
+    position: absolute;
+    top: 0;
+    margin-top: 60px; /* Ensure it's below the header */
+    padding: 5px 0;
+    background-color: #171715;
+    z-index: 999; /* Make sure it's above body content */  
+    transition: top 0.2s ease-in-out;
+    width: 100%; 
+}
+
 
 .subheader-link {
     color: #D4AF37; /* Gold text */
@@ -222,22 +229,26 @@ table.styled-table thead th {
 
 /* Bottom Section Styling */
 .bottom-section {
-    text-align: center; /* Centres the content */
+    text-align: center; /* Centers the content */
     padding: 40px; /* Adds space around the section */
 }
 
-/* Instagram logo styling */
-.instagram-icon {
-    width: 40px; /* Set the size of the icon */
+/* General styling for all social media icons */
+.social-icon {
+    max-width: 80px; /* Set the size of all icons */
     height: 40px; /* Maintain a square shape */
     object-fit: cover; /* Ensure the image is nicely cropped */
+    margin: 0 10px; /* Adds spacing between icons */
 }
 
-/* Instagram link styling */
-.instagram-link {
-    text-decoration: none; /* Removes the underline from the link */
+/* Removes underline from all social media links */
+.social-link {
+    text-decoration: none;
 }
 
-.instagram-link:hover .instagram-icon {
-    opacity: 0.7; /* Adds a hover effect */
+/* Hover effect applied correctly to all icons */
+.social-link:hover .social-icon {
+    opacity: 0.7;
 }
+ 
+
