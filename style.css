@@ -6,7 +6,40 @@
     .logo {
         width: 150px; /* Adjust logo size */
     }
+
+    /* Responsive Table */
+    .table-container {
+        width: 100%;
+        overflow-x: auto; /* Enables horizontal scrolling */
+    }
+
+    .styled-table {
+        font-size: 12px; /* Smaller font for mobile */
+        width: 100%; /* Ensure it fits the screen */
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 5px; /* Reduce padding for better fit */
+        white-space: nowrap; /* Prevents text from breaking onto multiple lines */
+    }
+    h1 {
+        font-size: 24px; /* Adjust as needed */
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4, h5, h6 {
+        font-size: 16px;
+    }
 }
+
 
 body {
     background-color: #171715; /* Deep Forest Green */
@@ -180,6 +213,11 @@ body {
     width: 100%; /* Full width */
     margin-top: 20px; /* Adds space above */
     margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;  /* Ensures it doesn’t go off-screen */
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
 }
 
 
