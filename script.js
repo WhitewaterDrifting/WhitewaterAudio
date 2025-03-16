@@ -37,3 +37,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let audio = document.getElementById("audioPlayer");
+    let source = document.getElementById("audioSource");
+    let beforeBtn = document.getElementById("beforeBtn");
+    let afterBtn = document.getElementById("afterBtn");
+
+    function switchAudio(file) {
+        source.src = file;
+        audio.load(); // Reload the audio player with the new source
+        audio.play(); // Auto-play the new file
+    }
+
+    beforeBtn.addEventListener("click", function () {
+        switchAudio("dialogue_editing_before.wav");
+    });
+
+    afterBtn.addEventListener("click", function () {
+        switchAudio("dialogue_editing_after.wav");
+    });
+});
