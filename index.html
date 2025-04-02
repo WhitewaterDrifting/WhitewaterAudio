@@ -50,16 +50,42 @@
     </div>
     
 <h2 id="services">Services</h2>
-    <h4>Audio Mixing &#9679; Dialogue Editing &#9679; Sound Design &#9679; Final Master </h4>
+
+<div class="video-container">
+    <div class="video-item">
         <h3>Dialogue Editing</h3>
-        <audio id="audioPlayer" controls>
-            <source id="Audio/dialogue_editing_before.wav" src="dialogue_editing_before.wav" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <br>
-        <button id="beforeBtn">Before Processing</button>
-        <button id="afterBtn">After Processing</button>
+        <iframe id="video1" src="https://player.vimeo.com/video/1071811096?title=0&byline=0&portrait=0&autoplay=0&loop=0&controls=1"
+                frameborder="0" allow="fullscreen; picture-in-picture" class="vimeo-iframe"></iframe>
     </div>
+
+    <div class="video-item">
+        <h3>Sound Design</h3>
+        <iframe id="video2" src="https://player.vimeo.com/video/1071808624?title=0&byline=0&portrait=0&autoplay=0&loop=0&controls=1"
+                frameborder="0" allow="fullscreen; picture-in-picture" class="vimeo-iframe"></iframe>
+    </div>
+
+    <div class="video-item">
+        <h3>Mastering</h3>
+        <iframe id="video3" src="https://player.vimeo.com/video/1071812936?title=0&byline=0&portrait=0&autoplay=0&loop=0&controls=1"
+                frameborder="0" allow="fullscreen; picture-in-picture" class="vimeo-iframe"></iframe>
+    </div>
+</div>
+
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    var player1 = new Vimeo.Player('video1');
+    var player2 = new Vimeo.Player('video2');
+    var player3 = new Vimeo.Player('video3');
+
+    window.onload = function() {
+        player1.play();
+        player2.play();
+        player3.play();
+    };
+</script>
+
+</html>
 
 
 <h2 id="credits">Credits</h2>
@@ -75,17 +101,11 @@
             </tr>
         </thead>
         <tr>
-            <td scope="row">Dialogue Editor-Foley-SoundFX</td>
-            <td scope="row">Mantaur</td>
-            <td scope="row"><a href="https://sophiabakkenart.godaddysites.com/" target="_blank">Sophia Bakken</a></td>
-            <td scope="row">2024</td>
-            <td scope="row">Animation</td>
-        </tr>
-        <tr>
             <td scope="row">Full Sound Edit</td>
             <td scope="row"><a href="https://rosspierson.co.uk/index.html" target="_blank">The Red List</a></td>
             <td scope="row"><a href="https://rosspierson.co.uk/index.html" target="_blank">Ross Pierson</a></td>
-            <td scope="row">In Post</td>
+            <td scope="row">TBA
+            </td>
             <td scope="row">Documentary</td>
         </tr> 
         <tr>
@@ -101,6 +121,13 @@
             <td scope="row">Ymlaen Llanelli</td>
             <td scope="row">2024</td>
             <td scope="row">Promo</td>
+        </tr>
+        <tr>
+            <td scope="row">Dialogue Editor-Foley-SoundFX</td>
+            <td scope="row">Mantaur</td>
+            <td scope="row"><a href="https://sophiabakkenart.godaddysites.com/" target="_blank">Sophia Bakken</a></td>
+            <td scope="row">2024</td>
+            <td scope="row">Animation</td>
         </tr>
         <tr>
             <td scope="row">Sound Designer</td>

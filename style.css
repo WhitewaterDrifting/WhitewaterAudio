@@ -209,6 +209,43 @@ body {
     background-color: #F5F5DC; /* Light beige hover effect */
 }
 
+/* Video Container Styling */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    max-width: 1000px; /* Adjust based on your layout */
+    margin: 0 auto;
+}
+
+/* Individual Video Styling */
+.video-item {
+    width: 32%; /* Ensures three videos in a row */
+}
+
+/* Responsive Iframe */
+.video-item iframe {
+    width: 100%;
+    height: 200px; /* Adjust for preferred aspect ratio */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item {
+        width: 100%;
+    }
+
+    .video-item iframe {
+        height: 250px;
+    }
+}
 
 
 .video-container {
