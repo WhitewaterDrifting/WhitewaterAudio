@@ -1,169 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Audio</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <div class="header-wrapper">
         <header class="site-header">
             <div class="logo-title-container">
                 <a href="index.html">
-                    <img src="images/CNV00031.jpg" alt="Whitewater Audio Logo" class="logo">
+                    <img src="images/Sound Design_ Swansea.jpg" alt="Whitewater Audio Logo" class="logo">
                 </a>
                 <h1 class="site-title">Whitewater Audio</h1>
             </div>
-            <a href="contact.html" class="contact-banner">Contact Me</a>
+            <button id="contactBtn" class="contact-button">Contact Me</button>
         </header>
 
+        <!-- Navigation Links -->
         <div class="subheader">
             <a href="#portfolio" class="subheader-link">Portfolio</a>
             <a href="#services" class="subheader-link">Services</a>
             <a href="#credits" class="subheader-link">Credits</a>
+            <a href="#music" class="subheader-link">Music</a>
         </div>
-    </div> <!-- Close the wrapper here -->
-</body>
+    </div>
 
-    
-    
-    <img src="images/IMG_3032.JPG" class="main-image" style="width: 500px; height: 350px;">
+    <!-- Contact Modal (Hidden by Default) -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <p>If you'd like to work together, feel free to reach out!</p>
+            <a href="mailto:adam@whitewateraud.io?subject=Inquiry" class="email-button">Email Me</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <img src="images/Profile Mixing Audio Engineer.JPG" class="main-image" style="width: 500px; height: 350px;">
     <h4>Hi, my name is Adam. I'm an Audio Engineer from South Wales.</h4>
-    <h6>This website is currently under construction as I continue learning to code. However, I am still available for work. For any inquiries, please feel free to reach out via email - adamedmunds2@gmail.com</h6>
-    <h6>In the meantime, feel free to checkout two examples from projects I've recently worked on.</h6>
+    <h6>This website is currently under construction as I continue learning to code. However, I am still available for work. Feel free to reach out via email - adam@whitewateraud.io</h6>
+    <h6>In the meantime, check out two examples from projects I've recently worked on.</h6>
 
+    <!-- Portfolio Section -->
     <h2 id="portfolio">Portfolio</h2>
     <div class="video-container">
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/ph-0uKBvjbo?si=IbTzf84YsEB0B1iI" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ph-0uKBvjbo?si=IbTzf84YsEB0B1iI" 
+                frameborder="0" allowfullscreen></iframe>
     </div>
-    
-<h2 id="services">Services</h2>
-    <h4>Audio Mixing &#9679; Dialogue Editing &#9679; Sound Design &#9679; Final Master </h4>
 
+    <!-- Services Section -->
+    <h2 id="services">Services</h2>
+    <div class="video-container">
+        <div class="video-item">
+            <h3>Dialogue Editing</h3>
+            <iframe id="video1" src="https://player.vimeo.com/video/1071811096" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+            <h3>Sound Design</h3>
+            <iframe id="video2" src="https://player.vimeo.com/video/1071808624" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+            <h3>Mastering</h3>
+            <iframe id="video3" src="https://player.vimeo.com/video/1071812936" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
-<h2 id="credits">Credits</h2>
-    <table class="styled-table">
-        <thead>
+    <!-- Credits Section -->
+    <h2 id="credits">Credits</h2>
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th scope="col">Role</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Director/ Company</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Media</th>
+                </tr>
+            </thead>
+            <tbody>
             <tr>
-                <th scope="col">Role</th>
-                <th scope="col">Title</th>
-                <th scope="col">Director/ Company</th>
-                <th scope="col">Year</th>
-                <th scope="col">Media</th>
+                <td scope="row">Full Sound Edit</td>
+                <td scope="row"><a href="https://rosspierson.co.uk/index.html" target="_blank">The Red List</a></td>
+                <td scope="row"><a href="https://rosspierson.co.uk/index.html" target="_blank">Ross Pierson</a></td>
+                <td scope="row">TBA
+                </td>
+                <td scope="row">Documentary</td>
+            </tr> 
+            <tr>
+                <td scope="row">Audio Engineer-VR Mix</td>
+                <td scope="row">Ser Y Cleddau</td>
+                <td scope="row">Vere Media</td>
+                <td scope="row">TBA</td>
+                <td scope="row">VR Experience</td>
             </tr>
-        </thead>
-        <tr>
-            <td scope="row">Dialogue Editor-Foley-SoundFX</td>
-            <td scope="row">Mantaur</td>
-            <td scope="row"><a href="https://sophiabakkenart.godaddysites.com/" target="_blank">Sophia Bakken</a></td>
-            <td scope="row">2024</td>
-            <td scope="row">Animation</td>
-        </tr>
-        <tr>
-            <td scope="row">Full Sound-Dialogue Editor-ADR-Foley-Sound Design</td>
-            <td scope="row">The Red List</td>
-            <td scope="row">Ross Pierson</td>
-            <td scope="row">In Post</td>
-            <td scope="row">Documentary</td>
-        </tr> 
-        <tr>
-            <td scope="row">Audio Engineer-VR Mix</td>
-            <td scope="row">Ser Y Cleddau</td>
-            <td scope="row">Vere Media</td>
-            <td scope="row">TBA</td>
-            <td scope="row">VR Experience</td>
-        </tr>
-        <tr>
-            <td scope="row">VO Recordist-Audio Engineer</td>
-            <td scope="row"><a href="https://www.instagram.com/p/C8KkrLJtCFF/" target="_blank">Great Llanelli Get Together 'Promo'</a></td>
-            <td scope="row">Ymlaen Llanelli</td>
-            <td scope="row">2024</td>
-            <td scope="row">Promo</td>
-        </tr>
-        <tr>
-            <td scope="row">Sound Designer</td>
-            <td scope="row"><a href="https://www.bbc.co.uk/programmes/p0gq8w29" target="_blank">Bwmp 'pilot'</a></td>
-            <td scope="row"><a href="https://www.sioncampbell.co.uk/" target="_blank">Sion Campell</a></td>
-            <td scope="row">2023</td>
-            <td scope="row">Tv Series</td>
-        </tr>
-        <tr>
-            <td scope="row">Full Sound Design Edit</td>
-            <td scope="row">Channel No.5</td>
-            <td scope="row"><a href="https://sandeepchadrick.com/contact" target="_blank">Sandeep Vadlumundi/ Chadrick Preuss</a></td>
-            <td scope="row">2021</td>
-            <td scope="row">Advertisement</td>
-        </tr>
-        <tr>
-            <td scope="row">Dialogue Editor-Sound Designer</td>
-            <td scope="row"><a href="https://www.youtube.com/watch?v=PtPlPP5nxvk" target="_blank">Online 'Music Video</a></td>
-            <td scope="row"><a href="https://sandeepchadrick.com/contact" target="_blank">Sandeep Vadlumundi/ Chadrick Preuss</a></td>
-            <td scope="row">2021</td>
-            <td scope="row">Music Video</td>
-        </tr>
-        <tr>
-            <td scope="row">Full Sound Design Edit-Dialogue Editor</td>
-            <td scope="row">Arcadia</td>
-            <td scope="row"><a href="https://www.facebook.com/AdaptRealityLtd" target="_blank">Adapt Reality</a></td>
-            <td scope="row">2021-2024</td>
-            <td scope="row">Film</td>
-        </tr>
-        <tr>
-            <td scope="row">Full Sound Design Edit-Dialogue Editor</td>
-            <td scope="row">Lala Land (Re-Creation)</td>
-            <td scope="row"><a href="https://madelinegkennedy.com/" target="_blank">Madeline Kennedy</a></td>
-            <td scope="row">2022</td>
-            <td scope="row">Film</td>
-        </tr>
-        <tr>
-            <td scope="row">Full Sound Design Edit-Dialogue Editor</td>
-            <td scope="row">No Country for Old Men (Re-Creation)</td>
-            <td scope="row"><a href="https://madelinegkennedy.com/" target="_blank">Madeline Kennedy</a></td>
-            <td scope="row">2022</td>
-            <td scope="row">Film</td>
-        </tr>
-        <tr>
-            <td scope="row">Composer-Sound FX Designer</td>
-            <td scope="row"><a href="https://socksandgoats.com/project-canopy/home" target="_blank">Project Canopy</a></td>
-            <td scope="row"><a href="https://socksandgoats.com/" target="_blank">Socks and Goats</a></td>
-            <td scope="row">2021-2023</td>
-            <td scope="row">Game</td>
-        </tr>
-        <tr>
-            <td scope="row">Engineer</td>
-            <td scope="row"><a href="https://open.spotify.com/track/08AsOCxawcUdYYq3vUQkdb?si=239031cedc4b4ef0" target="_blank">Walking My Dead Fish</a></td>
-            <td scope="row"><a href="https://open.spotify.com/artist/0PPWRoDDIXs2cst1PDTTvZ?si=2haafAZESb-0q1iBcEGNBQ" target="_blank">Monet</a></td>
-            <td scope="row">2022</td>
-            <td scope="row">Music</td>
-        </tr>
-        </tbody>
-    </table>
+            <tr>
+                <td scope="row">VO Recordist-Audio Engineer</td>
+                <td scope="row"><a href="https://www.instagram.com/p/C8KkrLJtCFF/" target="_blank">Great Llanelli Get Together 'Promo'</a></td>
+                <td scope="row">Ymlaen Llanelli</td>
+                <td scope="row">2024</td>
+                <td scope="row">Promo</td>
+            </tr>
+            <tr>
+                <td scope="row">Dialogue Editor-Foley-SoundFX</td>
+                <td scope="row">Mantaur</td>
+                <td scope="row"><a href="https://sophiabakkenart.godaddysites.com/" target="_blank">Sophia Bakken</a></td>
+                <td scope="row">2024</td>
+                <td scope="row">Animation</td>
+            </tr>
+            <tr>
+                <td scope="row">Sound Designer</td>
+                <td scope="row"><a href="https://www.bbc.co.uk/programmes/p0gq8w29" target="_blank">Bwmp 'pilot'</a></td>
+                <td scope="row"><a href="https://www.sioncampbell.co.uk/" target="_blank">Sion Campell</a></td>
+                <td scope="row">2023</td>
+                <td scope="row">Tv Series</td>
+            </tr>
+            <tr>
+                <td scope="row">Full Sound Design Edit</td>
+                <td scope="row">Channel No.5</td>
+                <td scope="row"><a href="https://sandeepchadrick.com/contact" target="_blank">Sandeep Vadlumundi</a></td>
+                <td scope="row">2021</td>
+                <td scope="row">Advertisement</td>
+            </tr>
+            <tr>
+                <td scope="row">Dialogue Editor-Sound Designer</td>
+                <td scope="row"><a href="https://www.youtube.com/watch?v=PtPlPP5nxvk" target="_blank">Online 'Music Video</a></td>
+                <td scope="row"><a href="https://sandeepchadrick.com/contact" target="_blank">Sandeep Vadlumundi</a></td>
+                <td scope="row">2021</td>
+                <td scope="row">Music Video</td>
+            </tr>
+            <tr>
+                <td scope="row">Full Sound Edit</td>
+                <td scope="row">Arcadia</td>
+                <td scope="row"><a href="https://www.facebook.com/AdaptRealityLtd" target="_blank">Adapt Reality</a></td>
+                <td scope="row">2021-2024</td>
+                <td scope="row">Film</td>
+            </tr>
+            <tr>
+                <td scope="row">Full Sound Edit</td>
+                <td scope="row">Lala Land (Re-Creation)</td>
+                <td scope="row"><a href="https://madelinegkennedy.com/" target="_blank">Madeline Kennedy</a></td>
+                <td scope="row">2022</td>
+                <td scope="row">Film</td>
+            </tr>
+            <tr>
+                <td scope="row">Full Sound Edit</td>
+                <td scope="row">No Country for Old Men (Re-Creation)</td>
+                <td scope="row"><a href="https://madelinegkennedy.com/" target="_blank">Madeline Kennedy</a></td>
+                <td scope="row">2022</td>
+                <td scope="row">Film</td>
+            </tr>
+            <tr>
+                <td scope="row">Composer-Sound FX Designer</td>
+                <td scope="row"><a href="https://socksandgoats.com/project-canopy/home" target="_blank">Project Canopy</a></td>
+                <td scope="row"><a href="https://socksandgoats.com/" target="_blank">Socks and Goats</a></td>
+                <td scope="row">2021-2023</td>
+                <td scope="row">Game</td>
+            </tr>
+            <tr>
+                <td scope="row">Engineer</td>
+                <td scope="row"><a href="https://open.spotify.com/track/08AsOCxawcUdYYq3vUQkdb?si=239031cedc4b4ef0" target="_blank">Walking My Dead Fish</a></td>
+                <td scope="row"><a href="https://open.spotify.com/artist/0PPWRoDDIXs2cst1PDTTvZ?si=2haafAZESb-0q1iBcEGNBQ" target="_blank">Monet</a></td>
+                <td scope="row">2022</td>
+                <td scope="row">Music</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!-- Bottom Section -->
-<section class="bottom-section">
-    <a href="https://www.instagram.com/noiz_adamed" target="_blank" class="social-link">
-        <img src="images/instagram-white-icon.webp" alt="Instagram" class="social-icon">
-    </a>
-    <a href="https://www.linkedin.com/in/adam-edmunds-2857651b0/" target="_blank" class="social-link">
-        <img src="images/linkedin.png" alt="Linkedin" class="social-icon">
-    </a>
-    <a href="https://open.spotify.com/artist/4EwAqcjE9DSYIrt4XAmB0W?si=elx5h1-fQ5eEKek7-7uyjQ" target="_blank" class="social-link">
-        <img src="images/Spotify_Primary_Logo_RGB_White.png" alt="spotify" class="social-icon">
-    </a>
-    <a href="https://www.imdb.com/name/nm15579316/?ref_=fn_all_nme_1" target="_blank" class="social-link">
-        <img src="images/IMDb_Logo_Alt_Rectangle_White._CB443385945_.png" alt="spotify" class="social-icon">
-    </a>
-</section>
+    <section id="music">
+        <h2> Caution Horses</h2>
+        <p>Caution Horses is my music project I run for fun and to practice audio stuff.  
+            Music is available on all major platforms.  </p>
+        <div>
+          <a href="https://open.spotify.com/artist/5dmAFLBKZ3csgJZb1uz1O9?si=TLzxrYlAR8-zlj9aYqkEPQ" target="_blank">Spotify</a>
+          <a href="https://music.apple.com/gb/artist/far-from-animals/1475793649" target="_blank">Apple Music</a>
+        </div>
+      </section>
 
-<script src="js/script.js"></script>
+      
+    <!-- Social Media Links -->
+    <section class="bottom-section">
+        <a href="https://www.instagram.com/noiz_adamed" target="_blank">
+            <img src="images/instagram Dialogue Editor.webp" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/adam-edmunds-2857651b0/" target="_blank">
+            <img src="images/Linkedin Audio Sound Wales.png" alt="Linkedin" class="social-icon">
+        </a>
+        <a href="https://open.spotify.com/artist/4EwAqcjE9DSYIrt4XAmB0W?si=elx5h1-fQ5eEKek7-7uyjQ" target="_blank">
+            <img src="images/Spotify Music Engineer.png" alt="Spotify" class="social-icon">
+        </a>
+        <a href="https://www.imdb.com/name/nm15579316/?ref_=fn_all_nme_1" target="_blank">
+            <img src="images/IMDB_ Foley Artist.png" alt="IMDB" class="social-icon">
+        </a>
+    </section>
+
+    <!-- JavaScript for Contact Modal -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactBtn = document.getElementById("contactBtn");
+            const modal = document.getElementById("contactModal");
+            const closeModal = document.querySelector(".close");
+
+            contactBtn.addEventListener("click", function () {
+                modal.style.display = "flex";
+            });
+
+            closeModal.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <!-- Vimeo API Script -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        var player1 = new Vimeo.Player('video1');
+        var player2 = new Vimeo.Player('video2');
+        var player3 = new Vimeo.Player('video3');
+
+        window.onload = function () {
+            player1.play();
+            player2.play();
+            player3.play();
+        };
+    </script>
 
 </body>
 </html>
