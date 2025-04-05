@@ -2,6 +2,15 @@
     .container {
         flex-direction: column;
     }
+
+    @font-face {
+        font-family: 'CustomGoogleFont'; /* You can rename this */
+        src: url('Fonts/HTxqL289NzCGg4MzN6KJ7eW6CYyF_jzx13E.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      
     
     .logo {
         width: 150px; /* Adjust logo size */
@@ -47,11 +56,16 @@
 
 
 body {
-    background-color: #171715; /* Deep Forest Green */
-    color: #F5F5DC; /* Warm Beige for text */
-    font-family: 'Courier New', Courier, monospace; /* Vintage typewriter font */
+    color: #F4D6CC; /* Warm Beige for text */
+    font-family: 'CustomGoogleFont', 'Courier New', Courier, monospace;
     margin: 0;
     padding: 20px;
+    background-image: url('images/Background Audio Engineer_South Wales.jpg'); 
+    background-size: cover; /* Ensures it covers the whole screen */
+    background-position: center; /* Centres the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps it static while scrolling */
+    padding-top: 80px; /* Adjust based on your header's height */
 }
 
 img, video {
@@ -69,36 +83,25 @@ img, video {
     object-fit: cover;
 }
 
-body {
-    background-image: url('images/Background Audio Engineer_South Wales.jpg'); 
-    background-size: cover; /* Ensures it covers the whole screen */
-    background-position: center; /* Centres the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: fixed; /* Keeps it static while scrolling */
-    padding-top: 80; /* Adjust based on your header's height */
-}
-
-
 
 
 h1, h2, h3, h5 {
-    color: #D4AF37; /* Muted Gold */
+    color: #F4D6CC; /* Muted Gold */
     text-transform: uppercase;
 }
 h4,h6 {
-    color: #D4AF37; /* Muted Gold */
-    text-transform: uppercase;
+    color: #F4D6CC; /* Muted Gold */
     text-align:center
 }
 
 
 a {
-    color: #e35218;
+    color: #44633F;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
-    color: #F5F5DC;
+    color: #F4D6CC;
 }
 
 /* Header styling */
@@ -111,7 +114,7 @@ a:hover {
     align-items: center;
     justify-content: space-between; /* Keeps contact banner on the right */
     padding: 1px 20px;
-    background-color: #171715;
+    background-color: #000;
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -138,7 +141,7 @@ body {
     height: 50px; /* Same as width for a perfect circle */
     border-radius: 30%; /* Makes the image a circle */
     object-fit: cover; /* Ensures the image fills the circular shape */
-    border: 2px solid #D4AF37; /* Optional: Adds a vintage-style gold border */
+    border: 2px solid #44633F; /* Optional: Adds a vintage-style gold border */
     margin-right: 20px;
 }
 
@@ -146,7 +149,7 @@ body {
 /* Site name styling */
 .site-title {
     font-size: 24px;
-    color: #D4AF37; /* Gold for vintage vibe */
+    color: #F4D6CC; /* Gold for vintage vibe */
     font-family: "Arial", sans-serif; /* Choose a font that matches your style */
     white-space: nowrap; /* Prevents title from breaking into two lines */
 }
@@ -170,7 +173,7 @@ body {
     top: 0;
     margin-top: 60px; /* Ensure it's below the header */
     padding: 5px 0;
-    background-color: #171715;
+    background-color: #000000;
     z-index: 999; /* Make sure it's above body content */  
     transition: top 0.2s ease-in-out;
     width: 100%; 
@@ -178,7 +181,7 @@ body {
 
 
 .subheader-link {
-    color: #D4AF37; /* Gold text */
+    color: #F4D6CC; /* Gold text */
     text-decoration: none;
     padding: 5px 10px;
     transition: color 0.3s ease-in-out;
@@ -190,12 +193,12 @@ body {
 
 
 
-.contact-banner {
+.contact-button {
     position: fixed;
     top: 10px;
     right: 10px;
-    background-color: #D4AF37;
-    color: #2C3E50;
+    background-color: #44633F;
+    color: #F4D6CC;;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -204,9 +207,8 @@ body {
     z-index: 1000;  /* Ensures it stays on top of other elements */
 }
 
-
-.contact-banner:hover {
-    background-color: #F5F5DC; /* Light beige hover effect */
+.contact-button:hover {
+    background-color: #44633F; /* Light beige hover effect */
 }
 
 /* Video Container Styling */
@@ -279,15 +281,15 @@ body {
 }
 
 .styled-table {
-    background-color: #FAF9F6; /* Off-White for better contrast */
-    color: #2C3E50; /* Deep Forest Green text */
+    background-color: #F4D6CC; /* Off-White for better contrast */
+    color: #000; /* Deep Forest Green text */
     border-radius: 8px; /* Slight rounding for a softer look */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
     padding: 10px;
 }
 
 table.styled-table thead th {
-    background-color: #D4AF37;
+    background-color: #44633F;
     color: black !important; /* Adjust text colour if needed */
 }
 
@@ -298,23 +300,23 @@ table.styled-table thead th {
 }
 
 .styled-table tr:nth-child(even) {
-    background-color: #F5F5DC; /* Warm Beige */
+    background-color: #F4D6CC; /* Warm Beige */
 }
 
 .styled-table tr:nth-child(odd) {
-    background-color: #FAF9F6; /* Off-White */
+    background-color: #F4D6CC; /* Off-White */
 }
 
 .styled-table tr:hover {
-    background-color: #D4AF37; /* Muted Gold */
-    color: #2C3E50; /* Deep Forest Green */
+    background-color: #9AB87A; /* Muted Gold */
+    color: #000; /* Deep Forest Green */
     transition: 0.3s ease-in-out;
 }
 
 .email-button {
     display: inline-block;
-    background-color: #D4AF37; /* Gold */
-    color: #2C3E50; /* Dark text */
+    background-color: #44633F;; /* Gold */
+    color: #F5F5DC; /* Dark text */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -350,4 +352,71 @@ table.styled-table thead th {
     opacity: 0.7;
 }
  
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
 
+/* Modal Content */
+.modal-content {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Email Button */
+.email-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #44633F;
+    color: #F4D6CC;
+    border-radius: 5px;
+}
+
+
+.email-button:hover {
+    background: #9B6A6C;
+}
+
+#artist-info {
+    padding: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+  
+  #artist-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #artist-info a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
