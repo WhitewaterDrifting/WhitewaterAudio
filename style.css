@@ -1,49 +1,9 @@
-@media (max-width: 640px) { /* For tablets & phones */
-    .container {
-        flex-direction: column;
-    }
-    .site-title {
-        font-size: 18px;
-        text-align: center;
-      }
-    .logo {
-        width: 35px;
-        height: 35px;
-        margin-right: 10px;
-      }
-    .contact-button {
-        padding: 6px 12px;
-        font-size: 14px;
-        top: 5px;
-        right: 5px;
-      }
-    .site-header {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    .logo-title-container {
-        justify-content: center;
-        margin-bottom: 5px;
-      }
-    .main-image {
-          max-width: 70%;
-          margin: 20px auto;
-        }
-    body {
-       padding: 10px;
-        }
-          
-    section {
-        margin-bottom: 20px;
-            }  
-    .social-icon {
-        max-width: 60px;
-        height: 30px;
-        margin: 5px;
-              } 
-    .testimonial {
-        flex: 1 1 100%;
-        }
+/* Site name styling */
+.site-title {
+    color: #F4D6CC; /* Gold for vintage vibe */
+    font-family: "Arial", sans-serif; /* Choose a font that matches your style */
+    white-space: nowrap; /* Prevents title from breaking into two lines */
+    font-size: 24px;
 }
 
 body {
@@ -61,7 +21,7 @@ body {
       
     
     .logo {
-        width: 150px; /* Adjust logo size */
+        width: 100px; /* Adjust logo size */
     }
 
     /* Responsive Table */
@@ -80,10 +40,6 @@ body {
         padding: 5px; /* Reduce padding for better fit */
         white-space: nowrap; /* Prevents text from breaking onto multiple lines */
     }
-    h1 {
-        font-size: 24px; /* Adjust as needed */
-    }
-    
     h2 {
         font-size: 20px;
     }
@@ -94,10 +50,6 @@ body {
 
     h4, h5, h6 {
         font-size: 16px;
-    }
-    .site-title {
-        font-size: 24px; /* Make it smaller */
-        text-align: center; /* Center it for better layout */
     }
     
 
@@ -170,8 +122,7 @@ a:hover {
 .logo-title-container {
     display: flex;
     align-items: center;
-    gap: 1px; /* Adjust spacing between logo and title */
-    flex-shrink: 0; /* Prevents shrinking */
+    gap: 0.5px; /* Adjust spacing between logo and title */
 }
 
 
@@ -184,22 +135,15 @@ body {
 
 /* Logo styling */
 .logo {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Same as width for a perfect circle */
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Same as width for a perfect circle */
     border-radius: 30%; /* Makes the image a circle */
     object-fit: cover; /* Ensures the image fills the circular shape */
     border: 2px solid #44633F; /* Optional: Adds a vintage-style gold border */
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 
-/* Site name styling */
-.site-title {
-    font-size: 24px;
-    color: #F4D6CC; /* Gold for vintage vibe */
-    font-family: "Arial", sans-serif; /* Choose a font that matches your style */
-    white-space: nowrap; /* Prevents title from breaking into two lines */
-}
 
 .header-wrapper {
     position: fixed;
@@ -213,6 +157,7 @@ body {
     width: 100%;
     margin-bottom: 0; /* Remove any unwanted gap */
     padding-bottom: 0;
+    padding-left: 8px;
 }
 
 .subheader {
@@ -242,8 +187,8 @@ body {
 
 .contact-button {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
     background-color: #44633F;
     color: #F4D6CC;;
     padding: 10px 20px;
@@ -290,37 +235,8 @@ body {
 }
 
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .video-item {
-        width: 100%;
-    }
 
-    .video-item iframe {
-        height: 250px;
-    }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 1000px) {
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .video-item-2 {
-        width: 100%;
-    }
-
-    .video-item-2 iframe {
-        height: 250px;
-    }
-}
 
 
 .video-container {
@@ -560,4 +476,84 @@ table.styled-table thead th {
     color: #F4D6CC; /* hover state */
     text-decoration: underline; /* optional */
   }
-  
+  @media (max-width: 624px) { /* For tablets & phones */
+
+    .contact-button {
+          position: centre;
+          top: 0;
+          right: 0;
+          margin-top: 10px;
+          border-radius: 10;
+          order: 2;
+          width: auto;
+        }
+      
+    .logo-title-container {
+          order: 1;
+          justify-content: center;
+          margin-bottom: 18px;
+          margin-top: 7px;
+        }
+    .container {
+        flex-direction: column;
+    }
+    .site-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    .logo {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+      }
+    .main-image {
+          max-width: 100%;
+          margin: 20px auto;
+        }
+    body {
+       padding: 10px;
+        }
+          
+    section {
+        margin-bottom: 20px;
+            }  
+    .social-icon {
+        max-width: 60px;
+        height: 30px;
+        margin: 5px;
+              } 
+    .testimonial {
+        flex: 1 1 100%;
+        }
+
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item {
+        width: 100%;
+    }
+
+    .video-item iframe {
+        height: 250px;
+    }
+}
+/* Mobile Responsiveness */
+@media (max-width: 1000px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item-2 {
+        width: 100%;
+    }
+
+    .video-item-2 iframe {
+        height: 250px;
+    }
+}
