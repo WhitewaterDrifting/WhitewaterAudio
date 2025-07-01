@@ -1,23 +1,23 @@
 /* Site name styling */
+/* Site name styling */
 .site-title {
-    color: #F4D6CC; /* Gold for vintage vibe */
-    font-family: "Arial", sans-serif; /* Choose a font that matches your style */
-    white-space: nowrap; /* Prevents title from breaking into two lines */
+    color: #F4D6CC;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    white-space: nowrap;
     font-size: 24px;
-}
-
-body {
-    overflow-x: hidden;
   }
   
-
- @font-face {
-    font-family: 'CustomGoogleFont'; /* You can rename this */
-    src: url('Fonts/Grouplove font.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    }
+  /* Body styling */
+  body {
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f7bd15;
+    -webkit-text-stroke: 0.1px black;
+    margin: 0;
+    padding: 20px;
+    background-color: #91b4af;
+  }
+  
       
     
     .logo {
@@ -55,8 +55,6 @@ body {
 
 
 body {
-    color: #F4D6CC; /* Warm Beige for text */
-    font-family: 'CustomGoogleFont', 'Courier New', Courier, monospace;
     margin: 0;
     padding: 20px;
     background-image: url('images/Background Audio Engineer_South Wales.jpg'); 
