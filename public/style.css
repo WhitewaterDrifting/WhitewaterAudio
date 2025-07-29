@@ -1,10 +1,27 @@
-@media (max-width: 768px) { /* For tablets & phones */
-    .container {
-        flex-direction: column;
-    }
+/* Site name styling */
+/* Site name styling */
+.site-title {
+    color: #F4D6CC;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    white-space: nowrap;
+    font-size: 24px;
+  }
+  
+  /* Body styling */
+  body {
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f7bd15;
+    -webkit-text-stroke: 0.1px black;
+    margin: 0;
+    padding: 20px;
+    background-color: #91b4af;
+  }
+  
+      
     
     .logo {
-        width: 150px; /* Adjust logo size */
+        width: 100px; /* Adjust logo size */
     }
 
     /* Responsive Table */
@@ -23,10 +40,6 @@
         padding: 5px; /* Reduce padding for better fit */
         white-space: nowrap; /* Prevents text from breaking onto multiple lines */
     }
-    h1 {
-        font-size: 24px; /* Adjust as needed */
-    }
-    
     h2 {
         font-size: 20px;
     }
@@ -38,17 +51,10 @@
     h4, h5, h6 {
         font-size: 16px;
     }
-    .site-title {
-        font-size: 24px; /* Make it smaller */
-        text-align: center; /* Center it for better layout */
-    }
     
-}
 
 
 body {
-    color: #F5F5DC; /* Warm Beige for text */
-    font-family: 'Courier New', Courier, monospace; /* Vintage typewriter font */
     margin: 0;
     padding: 20px;
     background-image: url('images/Background Audio Engineer_South Wales.jpg'); 
@@ -77,23 +83,22 @@ img, video {
 
 
 h1, h2, h3, h5 {
-    color: #D4AF37; /* Muted Gold */
+    color: #F4D6CC; /* Muted Gold */
     text-transform: uppercase;
 }
 h4,h6 {
-    color: #D4AF37; /* Muted Gold */
-    text-transform: uppercase;
+    color: #F4D6CC; /* Muted Gold */
     text-align:center
 }
 
 
 a {
-    color: #e35218;
+    color: #44633F;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
-    color: #F5F5DC;
+    color: #F4D6CC;
 }
 
 /* Header styling */
@@ -106,7 +111,7 @@ a:hover {
     align-items: center;
     justify-content: space-between; /* Keeps contact banner on the right */
     padding: 1px 20px;
-    background-color: #171715;
+    background-color: #000;
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -115,8 +120,7 @@ a:hover {
 .logo-title-container {
     display: flex;
     align-items: center;
-    gap: 1px; /* Adjust spacing between logo and title */
-    flex-shrink: 0; /* Prevents shrinking */
+    gap: 0.5px; /* Adjust spacing between logo and title */
 }
 
 
@@ -129,22 +133,15 @@ body {
 
 /* Logo styling */
 .logo {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Same as width for a perfect circle */
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Same as width for a perfect circle */
     border-radius: 30%; /* Makes the image a circle */
     object-fit: cover; /* Ensures the image fills the circular shape */
-    border: 2px solid #D4AF37; /* Optional: Adds a vintage-style gold border */
-    margin-right: 20px;
+    border: 2px solid #44633F; /* Optional: Adds a vintage-style gold border */
+    margin-right: 5px;
 }
 
 
-/* Site name styling */
-.site-title {
-    font-size: 24px;
-    color: #D4AF37; /* Gold for vintage vibe */
-    font-family: "Arial", sans-serif; /* Choose a font that matches your style */
-    white-space: nowrap; /* Prevents title from breaking into two lines */
-}
 
 .header-wrapper {
     position: fixed;
@@ -158,6 +155,7 @@ body {
     width: 100%;
     margin-bottom: 0; /* Remove any unwanted gap */
     padding-bottom: 0;
+    padding-left: 8px;
 }
 
 .subheader {
@@ -165,7 +163,7 @@ body {
     top: 0;
     margin-top: 60px; /* Ensure it's below the header */
     padding: 5px 0;
-    background-color: #171715;
+    background-color: #000000;
     z-index: 999; /* Make sure it's above body content */  
     transition: top 0.2s ease-in-out;
     width: 100%; 
@@ -173,7 +171,7 @@ body {
 
 
 .subheader-link {
-    color: #D4AF37; /* Gold text */
+    color: #F4D6CC; /* Gold text */
     text-decoration: none;
     padding: 5px 10px;
     transition: color 0.3s ease-in-out;
@@ -187,10 +185,10 @@ body {
 
 .contact-button {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: #D4AF37;
-    color: #000000;;
+    top: 5px;
+    right: 5px;
+    background-color: #44633F;
+    color: #F4D6CC;;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -200,7 +198,7 @@ body {
 }
 
 .contact-button:hover {
-    background-color: #F5F5DC; /* Light beige hover effect */
+    background-color: #44633F; /* Light beige hover effect */
 }
 
 /* Video Container Styling */
@@ -219,27 +217,24 @@ body {
     width: 32%; /* Ensures three videos in a row */
 }
 
+.video-item-2 {
+    width: 49%; /* Ensures three videos in a row */
+}
+
 /* Responsive Iframe */
 .video-item iframe {
     width: 100%;
     height: 200px; /* Adjust for preferred aspect ratio */
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .video-item {
-        width: 100%;
-    }
-
-    .video-item iframe {
-        height: 250px;
-    }
+.video-item-2 iframe {
+    width: 100%;
+    height: 400px; /* Adjust for preferred aspect ratio */
 }
+
+
+
+
 
 
 .video-container {
@@ -273,15 +268,15 @@ body {
 }
 
 .styled-table {
-    background-color: #FAF9F6; /* Off-White for better contrast */
-    color: #2C3E50; /* Deep Forest Green text */
+    background-color: #F4D6CC; /* Off-White for better contrast */
+    color: #000; /* Deep Forest Green text */
     border-radius: 8px; /* Slight rounding for a softer look */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
     padding: 10px;
 }
 
 table.styled-table thead th {
-    background-color: #D4AF37;
+    background-color: #44633F;
     color: black !important; /* Adjust text colour if needed */
 }
 
@@ -292,23 +287,68 @@ table.styled-table thead th {
 }
 
 .styled-table tr:nth-child(even) {
-    background-color: #F5F5DC; /* Warm Beige */
+    background-color: #F4D6CC; /* Warm Beige */
 }
 
 .styled-table tr:nth-child(odd) {
-    background-color: #FAF9F6; /* Off-White */
+    background-color: #F4D6CC; /* Off-White */
 }
 
 .styled-table tr:hover {
-    background-color: #D4AF37; /* Muted Gold */
-    color: #2C3E50; /* Deep Forest Green */
+    background-color: #9AB87A; /* Muted Gold */
+    color: #000; /* Deep Forest Green */
     transition: 0.3s ease-in-out;
 }
 
+  
+.testimonials {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    flex: 1 1 45%;
+    background: none;
+    padding: 0;
+  }
+  
+  h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    color: #F4D6CC;
+  }
+  
+  .position {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    color: #B0B0B0;
+  }
+  
+  .quote {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #F4D6CC;
+  }
+  
+  a {
+    color: #F4D6CC;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  
 .email-button {
     display: inline-block;
-    background-color: #D4AF37; /* Gold */
-    color: #2C3E50; /* Dark text */
+    background-color: #44633F;; /* Gold */
+    color: #F5F5DC; /* Dark text */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -383,14 +423,14 @@ table.styled-table thead th {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #D4AF37;
-    color: black;
-    text-decoration: none;
+    background: #44633F;
+    color: #F4D6CC;
     border-radius: 5px;
 }
 
+
 .email-button:hover {
-    background: #0056b3;
+    background: #9B6A6C;
 }
 
 #artist-info {
@@ -411,4 +451,107 @@ table.styled-table thead th {
     text-decoration: none;
     color: inherit;
   }
+
+  blockquote.quote {
+    border-left: 4px solid #44633F;
+    margin: 0;
+    padding-left: 20px;
+    font-style: italic;
+    color: #9AB87A;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  section {
+    margin-bottom: 30px;  /* Adjust the value as needed */
+  }
+  table a {
+    color: #44633F; /* or whatever colour you want */
+    text-decoration: none; /* optional - removes underline */
+  }
   
+  table a:hover {
+    color: #F4D6CC; /* hover state */
+    text-decoration: underline; /* optional */
+  }
+  @media (max-width: 624px) { /* For tablets & phones */
+
+    .contact-button {
+          position: centre;
+          top: 0;
+          right: 0;
+          margin-top: 10px;
+          border-radius: 10;
+          order: 2;
+          width: auto;
+        }
+      
+    .logo-title-container {
+          order: 1;
+          justify-content: center;
+          margin-bottom: 18px;
+          margin-top: 7px;
+        }
+    .container {
+        flex-direction: column;
+    }
+    .site-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    .logo {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+      }
+    .main-image {
+          max-width: 100%;
+          margin: 20px auto;
+        }
+    body {
+       padding: 10px;
+        }
+          
+    section {
+        margin-bottom: 20px;
+            }  
+    .social-icon {
+        max-width: 60px;
+        height: 30px;
+        margin: 5px;
+              } 
+    .testimonial {
+        flex: 1 1 100%;
+        }
+
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item {
+        width: 100%;
+    }
+
+    .video-item iframe {
+        height: 250px;
+    }
+}
+/* Mobile Responsiveness */
+@media (max-width: 1000px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item-2 {
+        width: 100%;
+    }
+
+    .video-item-2 iframe {
+        height: 250px;
+    }
+}
